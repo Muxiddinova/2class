@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    animation-name: go;
+    animation-duration: 3s;
+}
+
+@keyframes go{
+    /*from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(300px);
+    }*/
+
+    /*from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }*/
+
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(300px);
+    }
+    1000%{
+        transform: translateY(400px) translateX(300px)
+    }
+
+}
